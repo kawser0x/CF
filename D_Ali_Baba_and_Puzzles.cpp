@@ -1,0 +1,24 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define ll long long
+
+int main()
+{
+    ios_base::sync_with_stdio(0);
+    cin.tie(0);
+
+    ll a, b, c, d;
+    if (!(cin >> a >> b >> c >> d))
+        return 0;
+
+    if ( a + b - c == d || a + b * c == d || a - b + c == d || a - b * c == d || a * b + c == d || a * b - c == d )
+    {
+        cout << "YES";
+    }
+    else
+    {
+        cout << "NO";
+    }
+
+    return 0;
+}
